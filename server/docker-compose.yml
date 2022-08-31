@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  techbox:
+    image: artifycz/techbox:v1.4
+    restart: always
+    container_name: 'techbox'
+    volumes:
+    - ./world:/srv/minecraft/world
+    - ./crash-reports/:/srv/minecraft/crash-reports
+    - ./logs:/srv/minecraft/logs
+    - ./server.properties:/srv/minecraft/server.properties
+    - ./eula.txt:/srv/minecraft/eula.txt
