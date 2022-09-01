@@ -8,3 +8,5 @@ services:
       - ./data/world:/data/world
       - ./data/logs:/data/logs
       - ./data/crash-reports:/data/crash-reports
+    ports:
+      - 25565:25565
