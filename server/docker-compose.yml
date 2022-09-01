@@ -5,8 +5,6 @@ services:
     restart: always
     container_name: 'techbox'
     volumes:
-    - ./world:/srv/minecraft/world
-    - ./crash-reports/:/srv/minecraft/crash-reports
-    - ./logs:/srv/minecraft/logs
-    - ./server.properties:/srv/minecraft/server.properties
-    - ./eula.txt:/srv/minecraft/eula.txt
+      - ./data/world:/data/world
+      - ./data/logs:/data/logs
+      - ./data/crash-reports:/data/crash-reports

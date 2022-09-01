@@ -1,5 +1,5 @@
 FROM openjdk:8-jre
-WORKDIR /srv/minecraft
+WORKDIR /data
 COPY . .
 EXPOSE 25565
 ARG MIN_RAM=1G
